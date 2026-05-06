@@ -81,12 +81,12 @@ h1{margin:0;font-family:'Korail','Paperozi',sans-serif;font-size:clamp(36px,6vw,
 .guide-card li{position:relative;padding-left:18px;line-height:1.7;color:#5d7385;white-space:pre-line}
 .guide-card li:before{content:"";position:absolute;left:0;top:.75em;width:7px;height:7px;border-radius:50%;background:var(--sky-400)}
 .sample-section{scroll-margin-top:0}
-.sample-tabs-wrap{position:relative;top:auto;z-index:20;margin:0 auto 22px;padding:10px 0;background:linear-gradient(180deg,rgba(244,251,255,.96),rgba(244,251,255,.82));backdrop-filter:blur(12px);transform:translateZ(0);will-change:auto;border-radius:22px}.sample-tabs-wrap.is-parent-sticky{z-index:200;box-shadow:0 14px 34px rgba(74,134,178,.14);border:1px solid rgba(84,174,225,.14)}
+.sample-tabs-wrap{position:relative;top:auto;z-index:20;margin:0 auto 22px;padding:10px 0;background:linear-gradient(180deg,rgba(244,251,255,.96),rgba(244,251,255,.82));backdrop-filter:blur(12px);will-change:transform;border-radius:22px}.sample-tabs-wrap.is-parent-sticky{z-index:200;box-shadow:0 14px 34px rgba(74,134,178,.14);border:1px solid rgba(84,174,225,.14)}
 .sample-tabs{display:flex;justify-content:center;gap:10px;overflow-x:auto;padding:6px 2px;scrollbar-width:none}
 .sample-tabs::-webkit-scrollbar{display:none}
 .tab-button{flex:0 0 auto;border:1px solid rgba(84,174,225,.24);border-radius:999px;background:rgba(255,255,255,.88);padding:12px 20px;cursor:pointer;font-weight:800;color:#50738a;box-shadow:var(--shadow-soft);transition:.2s ease}
 .tab-button[aria-selected="true"]{background:linear-gradient(135deg,#67b8e7,#b4e5ff);color:#fff;border-color:transparent;box-shadow:0 14px 26px rgba(84,174,225,.26)}
-.sample-grid{columns:3 250px;column-gap:18px;min-height:260px}
+.sample-grid{columns:3 250px;column-gap:18px;min-height:0}
 .sample-card{break-inside:avoid;margin:0 0 18px;border-radius:26px;background:rgba(255,255,255,.94);border:1px solid var(--line);box-shadow:var(--shadow-soft);overflow:hidden;cursor:pointer;transition:box-shadow .22s ease,opacity .22s ease}
 .sample-card:hover{opacity:.97;box-shadow:var(--shadow)}
 .sample-image{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f7fcff,#edf8ff);padding:12px;min-height:180px}
