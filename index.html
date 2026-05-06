@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시골별님 아트머그 페이지</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="am-page" id="top">
+    <section class="hero" aria-label="페이지 소개">
+      <div class="hero__inner">
+        <p class="eyebrow">Live2D & Illustration Commission</p>
+        <h1>시골별 커미션</h1>
+        <div class="hero__badges">
+          <span>ArtMug</span>
+          <span>Illustration</span>
+          <span>Live2D Ready</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notice">
+      <div class="section-head">
+        <p>Notice</p>
+        <h2>공지사항</h2>
+      </div>
+      <div class="notice-list" data-render="notice"></div>
+    </section>
+
+    <section class="section" id="form-guide">
+      <div class="section-head">
+        <p>Request Form</p>
+        <h2>신청 양식</h2>
+      </div>
+      <div class="form-card">
+        <div class="form-intro">
+          <h3>아래 항목을 복사해서 문의 시 작성해주세요.</h3>
+          <p>참고 이미지나 자료가 있을수록 캐릭터 해석과 완성도가 높아집니다.</p>
+        </div>
+        <form class="request-form" data-request-form>
+          <div class="request-fields">
+            <label class="request-field request-field--short">
+              <span>01</span>
+              <strong>신청 타입</strong>
+              <input type="text" name="type" placeholder="예시: 방송용 - 전신">
+            </label>
+            <label class="request-field">
+              <span>02</span>
+              <strong>캐릭터 정보 및 외형</strong>
+              <small>캐릭터의 상세 정보와 외형을 작성해주세요. 또는 참고 이미지 및 자료를 첨부해주셔도 됩니다.</small>
+              <textarea name="character" rows="6" placeholder="캐릭터 설정, 의상, 헤어, 표정, 컬러, 참고자료 링크 등을 작성해주세요."></textarea>
+              <em>자료 첨부 시 더욱 높은 퀄리티의 일러스트 작업이 가능합니다.</em>
+            </label>
+            <label class="request-field">
+              <span>03</span>
+              <strong>캐릭터 포즈 및 구도</strong>
+              <small>원하시는 포즈와 구도를 작성해주세요. 또는 참고 이미지 및 자료를 첨부해주셔도 됩니다.</small>
+              <textarea name="pose" rows="6" placeholder="원하는 포즈, 카메라 구도, 손동작, 분위기, 참고자료 링크 등을 작성해주세요."></textarea>
+              <em>자료 첨부 시 더욱 높은 퀄리티의 일러스트 작업이 가능합니다.</em>
+            </label>
+            <label class="request-field">
+              <span>04</span>
+              <strong>기타 요청사항</strong>
+              <small>원하시는 일러스트의 분위기, 배경, 색감 등 중요 사항을 자유롭게 작성해주세요.</small>
+              <textarea name="extra" rows="5" placeholder="분위기, 배경, 색감, 사용 용도, 반드시 반영해야 할 사항 등을 작성해주세요."></textarea>
+            </label>
+            <label class="request-field request-field--short">
+              <span>05</span>
+              <strong>방송 정보</strong>
+              <small>닉네임과 송출 플랫폼을 함께 작성해주세요.</small>
+              <input type="text" name="stream" placeholder="예시: 시골별 / 치지직, 유튜브">
+            </label>
+          </div>
+          <div class="omakase-box">
+            <strong>오마카세 진행도 가능합니다.</strong>
+            <p>오마카세의 경우, 캐릭터의 구도 및 분위기는 작가의 재량에 따라 작업됩니다.</p>
+          </div>
+          <div class="form-actions">
+            <button class="copy-button" type="button" data-action="copy-form">작성 내용 복사하기</button>
+            <button class="reset-button" type="reset" data-action="reset-form">초기화</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="section-head">
+        <p>Process</p>
+        <h2>작업 과정</h2>
+      </div>
+      <div class="process-wrap">
+        <div class="process-line" data-render="process"></div>
+        <div class="guide-groups" data-render="guide"></div>
+      </div>
+    </section>
+
+    <section class="section sample-section" id="samples">
+      <div class="section-head">
+        <p>Portfolio</p>
+        <h2>샘플</h2>
+      </div>
+      <div class="sample-tabs-wrap" data-sticky-tabs>
+        <div class="sample-tabs" data-render="portfolio-tabs"></div>
+      </div>
+      <div class="sample-grid" data-render="portfolio"></div>
+    </section>
+
+    <section class="section" id="collab">
+      <div class="section-head">
+        <p>Collaborators</p>
+        <h2>협업 작가</h2>
+      </div>
+      <div class="collab-grid" data-render="collab"></div>
+    </section>
+  </main>
+
+  <div class="modal" data-modal aria-hidden="true">
+    <button class="modal__close" type="button" data-modal-close aria-label="닫기">×</button>
+    <div class="modal__panel">
+      <img src="" alt="" data-modal-image>
+      <div class="modal__caption" data-modal-caption></div>
+    </div>
+  </div>
+
+  <div class="toast" data-toast>복사되었습니다.</div>
+  <script src="./app.js"></script>
+</body>
+</html>
